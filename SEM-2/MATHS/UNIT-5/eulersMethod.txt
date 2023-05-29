@@ -1,0 +1,37 @@
+Euler's method is a basic numerical method used to approximate the solutions of first-order ordinary differential equations (ODEs). It is a straightforward and intuitive approach that involves dividing 
+the interval of interest into small steps and approximating the solution at each step using the slope of the ODE.
+
+The method starts with an initial condition that specifies the value of the solution at a given point. Let's consider a first-order ODE in the form:
+
+dy/dx = f(x, y)
+
+The goal is to approximate the solution y(x) at various points within a given interval.
+
+Euler's method works as follows:
+
+    Define the initial condition: Specify the initial point (x0, y0), where y0 is the known value of the solution at x0.
+
+    Choose a step size: Determine the size of the interval between consecutive points. The step size is denoted by h and controls the granularity of the approximation. A smaller 
+    step size generally leads to a more accurate approximation.
+
+    Iterate over the desired range: Starting from the initial condition (x0, y0), calculate the next point (x1, y1) using the following steps:
+
+    a. Evaluate the derivative: Compute the value of the derivative dy/dx = f(x, y) at the current point (xi, yi).
+
+    b. Approximate the next value: Multiply the derivative by the step size h and add it to the current y-value to obtain the approximate next value of y. This step is based on 
+    the assumption that the derivative remains approximately constant within the step.
+
+    y_(i+1) = yi + h * f(xi, yi)
+
+    c. Update the x-value: Increment the x-value by the step size h to move to the next point.
+
+    x_(i+1) = xi + h
+
+    d. Repeat the process: Repeat steps (a)-(c) for the desired number of iterations or until the desired endpoint is reached.
+
+    Repeat the iterations until the desired endpoint is reached, obtaining a set of (x, y) pairs that approximate the solution of the ODE within the specified interval.
+
+Euler's method provides a simple way to approximate the solution of an ODE by taking small steps along the curve defined by the ODE. However, it is worth noting that Euler's method has 
+limitations. It is a first-order method, meaning that the error in the approximation typically increases as the step size increases. Additionally, it may introduce cumulative errors over 
+long intervals or when dealing with stiff ODEs (where the solution changes rapidly). Other numerical methods, such as the Runge-Kutta methods, provide higher accuracy and are often
+preferred for more accurate and reliable approximations of ODE solutions.
