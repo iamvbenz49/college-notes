@@ -1,0 +1,37 @@
+The Taylor series method is a numerical method for approximating the solutions of ordinary differential equations (ODEs) using a power series expansion. It is based on Taylor's theorem, 
+which states that a smooth function can be approximated by an infinite series of its derivatives evaluated at a specific point.
+
+To apply the Taylor series method to solve an ODE, we start with an initial value problem (IVP) defined by an ODE and an initial condition. 
+Let's consider a first-order ODE as an example:
+
+dy/dx = f(x, y), y(x0) = y0
+
+The Taylor series expansion around the point (x0, y0) is:
+
+y(x) = y0 + (x - x0) * dy/dx + ((x - x0)^2/2!) * d^2y/dx^2 + ((x - x0)^3/3!) * d^3y/dx^3 + ...
+
+In practice, we truncate the series to a finite number of terms for computational purposes. Assuming that the function f(x, y) and its
+derivatives are known, we can substitute the series expansion into the ODE to obtain a recurrence relation for the derivatives. Here's a 
+general form of the recurrence relation for the k-th derivative:
+
+d^ky/dx^k = g(x, y, dy/dx, d^2y/dx^2, ..., d^(k-1)y/dx^(k-1))
+
+To solve the ODE numerically using the Taylor series method, we follow these steps:
+
+    Choose a step size 'h' and the desired number of terms 'n' for truncation.
+    Set up initial conditions: x = x0, y = y0, and compute the initial values of the derivatives up to the (n-1)-th order at x0 using the given function f(x, y) and its derivatives.
+    Iterate over the desired range of x, incrementing by 'h' in each step:
+        Evaluate the recurrence relation to compute the k-th derivative at each step.
+        Compute the next term in the Taylor series expansion using the derivatives.
+        Sum up the terms to obtain the approximation of y at each step.
+    Repeat until the desired endpoint is reached.
+
+It's important to note that the accuracy of the Taylor series method depends on the number of terms 'n' and the step size 'h'. Increasing the number of terms and decreasing the 
+step size generally lead to more accurate approximations.
+
+The Taylor series method can be extended to higher-order ODEs by converting them into systems of first-order ODEs. In this case, the Taylor series expansion and recurrence relations are 
+applied to each equation in the system.
+
+However, it's worth mentioning that while the Taylor series method provides accurate results when the function and its derivatives are well-behaved, it may suffer from issues like accumulation 
+of truncation errors and increased computational complexity as higher-order derivatives are involved. Other numerical methods, such as Euler's method, Runge-Kutta methods, or finite difference methods,
+are often preferred for practical ODE solving due to their better stability, efficiency, and error control properties.
