@@ -1,0 +1,17 @@
+why should we learn this lesson?
+
+We need numerical methods to solve ordinary differential equations (ODEs) because, in many cases, there is no analytical or exact solution available. Analytical solutions for ODEs are only possible for a limited number of well-behaved equations. However, most real-world problems involve complex equations that do not have known analytical solutions.
+
+Numerical methods provide a way to approximate the solutions of ODEs by dividing the problem into discrete steps. These methods allow us to approximate the behavior of the system at different points in time or space. Here are a few reasons why numerical methods are necessary:
+
+    Lack of analytical solutions: Many ODEs arising from real-world problems, such as those in physics, engineering, and biology, cannot be solved analytically. Numerical methods provide a practical alternative by approximating the solutions using computational techniques.
+
+    Complex or nonlinear equations: ODEs can involve complex functions, nonlinear relationships, or interactions between multiple variables. In such cases, finding exact solutions becomes extremely challenging or impossible. Numerical methods can handle these complexities and provide reasonable approximations.
+
+    Arbitrary initial/boundary conditions: ODEs often require specific initial conditions or boundary conditions to determine the unique solution. Numerical methods allow us to handle a wide range of initial or boundary conditions and approximate the solution over a desired interval.
+
+    Efficiency and scalability: Numerical methods can be implemented algorithmically and executed on computers. They can handle large systems of ODEs, allowing us to solve problems with numerous variables or intricate dynamics. This scalability makes numerical methods an essential tool for scientific simulations and engineering designs.
+
+    Flexibility and adaptability: Numerical methods offer flexibility in solving ODEs by allowing us to choose the desired accuracy, step size, and other parameters. They can be adapted to handle specific types of ODEs, such as stiff equations or systems with discontinuous behavior.
+
+Overall, numerical methods for solving ODEs provide a powerful and versatile approach to approximate solutions when exact analytical solutions are not available or practical to obtain. They have become indispensable in various scientific, engineering, and computational fields.
