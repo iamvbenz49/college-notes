@@ -1,0 +1,28 @@
+The 4th order Runge-Kutta (RK4) method is a numerical method used to approximate solutions to ordinary differential equations (ODEs). 
+It is one of the most widely used methods for solving ODEs due to its accuracy and simplicity.
+
+The RK4 method calculates the next value of the solution based on the current value and the derivative at different intermediate points.
+The general formula for RK4 is as follows:
+
+```
+k1 = h * f(tn, yn)
+k2 = h * f(tn + h/2, yn + k1/2)
+k3 = h * f(tn + h/2, yn + k2/2)
+k4 = h * f(tn + h, yn + k3)
+
+yn+1 = yn + (k1 + 2k2 + 2k3 + k4) / 6
+```
+
+Where:
+- `h` is the step size (the interval between two consecutive time points).
+- `t` represents the independent variable (often time).
+- `y` represents the solution at time `t`.
+- `f(t, y)` is the derivative of `y` with respect to `t` (the ODE).
+
+The RK4 method calculates four different increments (`k1`, `k2`, `k3`, `k4`) using the derivative function at various intermediate points. 
+These increments are then combined to estimate the solution at the next time point `t + h` (`yn+1`).
+
+By repeating this process iteratively, starting from an initial condition `y0` at `t0`, the RK4 method can approximate the solution of the ODE at multiple time points.
+
+It's important to note that while the RK4 method is accurate and widely used, it is a fixed-step method and may not always be suitable for
+problems with varying step sizes or stiff differential equations. In such cases, other numerical methods like adaptive-step-size methods or implicit methods may be more appropriate.
