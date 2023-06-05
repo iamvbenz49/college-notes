@@ -1,0 +1,29 @@
+Holography is a technique used to create and display three-dimensional images called holograms. Unlike regular photographs or 
+images displayed on a screen, holograms capture and reproduce the full three-dimensional structure of an object. Holography relies
+on the principles of interference and diffraction of light.
+
+Here is a simplified explanation of how holograms work:
+
+1. Recording a hologram:
+   - A coherent light source, such as a laser, is used to illuminate the object that will be recorded as a hologram.
+   - The laser light is split into two beams: the object beam and the reference beam.
+   - The object beam is directed onto the object, and it reflects off or scatters through the object, capturing its shape and structure.
+   - The reference beam is directed straight onto a recording medium, such as a photographic plate or a photosensitive material.
+   - The two beams (object beam and reference beam) intersect and interfere with each other on the recording medium.
+   - The interference pattern contains information about both the amplitude and the phase of the light waves.
+
+2. Developing the hologram:
+   - The recording medium is chemically or digitally processed to develop the interference pattern.
+   - This pattern is a complex arrangement of alternating light and dark regions (interference fringes), which correspond to the recorded interference between the object and reference beams.
+   - The interference fringes are permanently embedded in the recording medium.
+
+3. Reconstructing the hologram:
+   - To view the hologram, a coherent light source, typically a laser, is used.
+   - The reconstructed beam from the laser is directed onto the developed hologram.
+   - As the laser light illuminates the hologram, it diffracts off the interference fringes recorded in the hologram.
+   - The diffraction causes the light to spread out and form new wavefronts that mimic the original wavefronts scattered by the object during recording.
+   - The reconstructed wavefronts create an illusion of a three-dimensional object floating in space.
+   - When viewed from different angles, the hologram displays different perspectives of the object, just as if it were a real physical object.
+
+It's important to note that this simplified explanation overlooks some technical details and the mathematical principles of interference and diffraction that underlie 
+holography. Holography is a complex and fascinating field that finds applications in various areas, including art, security, scientific visualization, and more.
